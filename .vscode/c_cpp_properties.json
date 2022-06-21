@@ -1,0 +1,30 @@
+{
+    "env": {
+        "defaultIncludePath": [
+            "${workspaceFolder}/frontend",
+            "${workspaceFolder}/frontend/include",
+            "/usr/include/",
+            "/usr/include/qt"
+        ]
+    },
+    "configurations": [
+        {
+            "name": "default",
+            "intelliSenseMode": "${default}",
+            "includePath": [
+                "${defaultIncludePath}"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/frontend"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}
