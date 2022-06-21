@@ -3,16 +3,16 @@
         "defaultIncludePath": [
             "${workspaceFolder}/frontend",
             "${workspaceFolder}/frontend/include",
-            "/usr/include/",
-            "/usr/include/qt"
         ]
     },
     "configurations": [
         {
-            "name": "default",
+            "name": "linux",
             "intelliSenseMode": "${default}",
             "includePath": [
-                "${defaultIncludePath}"
+                "${defaultIncludePath}",
+                "/usr/include/",
+                "/usr/include/qt"
             ],
             "compilerPath": "/usr/bin/g++",
             "cStandard": "c11",
