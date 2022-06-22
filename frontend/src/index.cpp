@@ -1,12 +1,12 @@
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QWidget>
+#include "./view/MainWindow.hpp"
+
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    QWidget window;
-    window.resize(320, 240);
-    window.show();
-    window.setWindowTitle(QApplication::translate("toplevel", "Top-level widget"));
+    QMainWindow mainWindow(nullptr);
+    Ui_MainWindow window;
+    window.setupUi(&mainWindow);
+    mainWindow.show();
     return app.exec();
 }
